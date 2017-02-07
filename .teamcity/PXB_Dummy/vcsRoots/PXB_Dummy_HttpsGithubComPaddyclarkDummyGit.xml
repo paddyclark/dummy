@@ -8,6 +8,7 @@
   <param name="ignoreKnownHosts" value="true" />
   <param name="secure:password" value="zxx80de2121bb429f5c6b6f3444db3c21b103dc054473381477715bd3ebd031712d6efa798d81a5744c775d03cbe80d301b" />
   <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="releases/*" />
   <param name="url" value="https://github.com/paddyclark/dummy.git" />
   <param name="useAlternates" value="true" />
   <param name="username" value="teamcity-autobuild" />
