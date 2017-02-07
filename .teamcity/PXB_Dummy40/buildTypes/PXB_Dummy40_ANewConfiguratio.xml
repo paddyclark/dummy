@@ -12,7 +12,7 @@
     <build-triggers />
     <artifact-dependencies>
       <dependency sourceBuildTypeId="PXB_Dummy_BuildConfiguration" cleanDestination="false">
-        <revisionRule name="lastSuccessful" revision="latest.lastSuccessful" branch="&lt;default&gt;" />
+        <revisionRule name="sameChainOrLastFinished" revision="latest.sameChainOrLastFinished" />
         <artifact sourcePath="LICENSE =&gt; other/" />
       </dependency>
     </artifact-dependencies>
