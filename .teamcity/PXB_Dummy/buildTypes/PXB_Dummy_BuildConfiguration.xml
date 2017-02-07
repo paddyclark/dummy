@@ -16,7 +16,9 @@
         </parameters>
       </runner>
     </build-runners>
-    <vcs-settings />
+    <vcs-settings>
+      <vcs-entry-ref root-id="PXB_Dummy_HttpsGithubComPaddyclarkDummyGit" />
+    </vcs-settings>
     <requirements />
     <build-triggers />
     <cleanup />
