@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="PXB" uuid="3dca2128-de8e-4f79-a48f-df9ae69a34ec" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>Dummy</name>
+  <name>Dummy 4.0</name>
   <parameters />
   <cleanup />
 </project>
