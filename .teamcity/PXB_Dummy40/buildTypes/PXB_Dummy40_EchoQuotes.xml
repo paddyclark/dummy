@@ -9,10 +9,10 @@
         <parameters>
           <param name="org.whitesource.overrideCheckPolicies" value="global" />
           <param name="script.content"><![CDATA[set message="Hello & World"
-SET message=###%message%###
-SET message=%message:"###=%
-SET message=%message:###"=%
-SET message=%message:###=%
+SET message=###%%message%%###
+SET message=%%message:"###=%%
+SET message=%%message:###"=%%
+SET message=%%message:###=%%
 echo %%message%%]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
