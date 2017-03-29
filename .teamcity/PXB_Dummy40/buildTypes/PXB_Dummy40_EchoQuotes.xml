@@ -15,7 +15,7 @@
 set message=Hello ^& World
 echo %%message:&=^&%%
 
-echo &quot;\\teamcity\artifacts\%teamcity.project.id%\%env.TEAMCITY_BUILDCONF_NAME%\%teamcity.build.id%&quot; &gt; fileshare.txt]]></param>
+echo \\teamcity\artifacts\%teamcity.project.id%\%env.TEAMCITY_BUILDCONF_NAME%\%teamcity.build.id% > fileshare.txt]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
