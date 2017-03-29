@@ -10,7 +10,9 @@
           <param name="org.whitesource.overrideCheckPolicies" value="global" />
           <param name="script.content"><![CDATA[echo on
 set message=Hello ^& World
-echo %%message:&=^&%%]]></param>
+echo %%message:&=^&%%
+
+echo &quot;\\teamcity\artifacts\%teamcity.project.id%\%env.TEAMCITY_BUILDCONF_NAME%\%teamcity.build.id%&quot; &gt; fileshare.txt]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
