@@ -13,10 +13,10 @@
           <param name="org.whitesource.overrideCheckPolicies" value="global" />
           <param name="script.content"><![CDATA[echo on
 set folder="%env.TEAMCITY_BUILDCONF_NAME%"
+set folder=%%folder:&=^&%%
 set folder=###%%folder%%###
 set folder=%%folder:"###=%%
 set folder=%%folder:###"=%%
-set folder=%%folder:&=^&%%
 
 echo \\teamcity\artifacts\%teamcity.project.id%\%%folder%%\%teamcity.build.id% > fileshare.txt]]></param>
           <param name="teamcity.step.mode" value="default" />
