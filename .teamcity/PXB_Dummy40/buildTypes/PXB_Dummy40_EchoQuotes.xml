@@ -12,7 +12,7 @@
         <parameters>
           <param name="org.whitesource.overrideCheckPolicies" value="global" />
           <param name="script.content"><![CDATA[echo on
-set message=Hello ^& World
+set message="%env.TEAMCITY_BUILDCONF_NAME%"
 echo %%message:&=^&%%
 
 echo \\teamcity\artifacts\%teamcity.project.id%\%env.TEAMCITY_BUILDCONF_NAME%\%teamcity.build.id% > fileshare.txt]]></param>
