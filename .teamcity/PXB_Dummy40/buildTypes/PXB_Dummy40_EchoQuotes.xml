@@ -4,7 +4,17 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_1834" name="" type="simpleRunner">
+        <parameters>
+          <param name="org.whitesource.overrideCheckPolicies" value="global" />
+          <param name="script.content"><![CDATA[set message="Hello & World"
+echo %%message%%]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings />
     <requirements />
     <build-triggers />
