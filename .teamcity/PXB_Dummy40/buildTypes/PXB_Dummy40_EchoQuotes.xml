@@ -3,9 +3,6 @@
   <name>output path &amp; save</name>
   <description />
   <settings>
-    <options>
-      <option name="artifactRules" value="fileshare.txt=&gt;.teamcity" />
-    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_1834" name="" type="simpleRunner">
