@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="fileshare.txt=&gt;.teamcity/fileshare.txt" />
+      <option name="artifactRules" value="fileshare.txt=&gt;.teamcity" />
     </options>
     <parameters />
     <build-runners>
