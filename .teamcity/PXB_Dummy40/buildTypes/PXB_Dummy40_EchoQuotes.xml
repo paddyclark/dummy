@@ -15,9 +15,8 @@ set folder=###%%folder%%###
 set folder=%%folder:"###=%%
 set folder=%%folder:###"=%%
 
-echo \\teamcity\artifacts\%teamcity.project.id%\%%folder:&=^&%%\%teamcity.build.id% > fileshare.txt
-@echo ##teamcity[publishArtifacts 'fileshare.txt=^>.teamcity']
-del fileshare.txt]]></param>
+echo \\teamcity\artifacts\%teamcity.project.id%\%%folder:&=^&%%\%teamcity.build.id% >%system.teamcity.build.tempDir%fileshare.txt
+@echo ##teamcity[publishArtifacts '%system.teamcity.build.tempDir%fileshare.txt=^>.teamcity']]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
