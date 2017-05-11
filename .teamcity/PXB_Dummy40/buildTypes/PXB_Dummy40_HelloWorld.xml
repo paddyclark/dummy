@@ -4,7 +4,16 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_1500" name="" type="simpleRunner">
+        <parameters>
+          <param name="org.whitesource.overrideCheckPolicies" value="global" />
+          <param name="script.content" value="echo &quot;Hello World&quot;" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings />
     <requirements />
     <build-triggers />
